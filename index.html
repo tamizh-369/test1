@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors - Live Leaderboard</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Registration/Login Screen -->
+  <div id="register-screen">
+    <input type="text" id="username" placeholder="Enter your name" autocomplete="username" />
+    <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" />
+    <button id="register-btn">Login / Register</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" style="display:none;">
+    <div id="split-left">
+      <h2 id="user-name"></h2>
+      <div id="game-controls">
+        <button class="rps-btn" data-choice="rock">Rock</button>
+        <button class="rps-btn" data-choice="paper">Paper</button>
+        <button class="rps-btn" data-choice="scissors">Scissors</button>
+      </div>
+      <div id="countdown"></div>
+      <div id="choices">
+        <div>
+          <span>You:</span>
+          <img id="user-choice-img" src="" alt="" style="display:none; width:100px;">
+        </div>
+        <div>
+          <span>Computer:</span>
+          <img id="computer-choice-img" src="" alt="" style="display:none; width:100px;">
+        </div>
+      </div>
+      <div id="result"></div>
+      <div id="score"></div>
+    </div>
+    <div id="split-right">
+      <h3>Leaderboard</h3>
+      <ul id="leaderboard"></ul>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

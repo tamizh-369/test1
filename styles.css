@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #191970 0%, #111 100%);
+  color: #f0e6ff;
+  margin: 0;
+  padding: 0;
+}
+
+#register-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#register-screen input,
+#register-screen button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+#register-screen button {
+  background: linear-gradient(90deg, #5b33ff 0%, #191970 100%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#register-screen button:hover {
+  background: linear-gradient(90deg, #8f5fff 0%, #3737ff 100%);
+  transform: scale(1.1);
+}
+
+#game-screen {
+  display: flex;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+
+#split-left, #split-right {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgba(20, 20, 40, 0.95);
+  box-shadow: 0 0 40px #000c, 0 0 8px #5b33ff66;
+  border-radius: 16px;
+  margin: 24px;
+}
+
+#split-left {
+  border-right: 2px solid #2a2a4d;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#game-controls {
+  margin-bottom: 20px;
+}
+
+.rps-btn {
+  padding: 15px 30px;
+  margin: 0 10px 10px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #5b33ff 0%, #191970 100%);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #0008;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.rps-btn:hover {
+  background: linear-gradient(90deg, #8f5fff 0%, #3737ff 100%);
+  transform: scale(1.1);
+}
+
+#countdown {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #ffd700;
+  text-shadow: 0 0 8px #5b33ff, 0 0 2px #fff;
+}
+
+#choices {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#choices div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#choices img {
+  margin-top: 8px;
+  border: 2px solid #5b33ff;
+  border-radius: 12px;
+  background: #222;
+  box-shadow: 0 0 16px #5b33ff88;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: brightness(1.5) drop-shadow(0 0 8px #fff);
+}
+
+#result {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffbb00;
+  text-shadow: 0 0 4px #222;
+}
+
+#score {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#split-right {
+  background: #181828;
+}
+
+#leaderboard {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leaderboard li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #2a2a4d;
+  color: #b3aaff;
+  text-shadow: 0 0 2px #5b33ff44;
+}
